@@ -8,10 +8,9 @@ export default function Home() {
   const qrCode = useQRCode(wifiQrcode)
   console.log({ qrCode });
   return (
-    <div className='container bg-black h-full w-full flex content-center justify-center'>
+    <div className='container flex content-center justify-center w-full h-full bg-black'>
       <div>
-      <Form />
-    
+        <h1 className=''> Crie um QRCode para acessar sua rede WIFI!</h1>
       </div>
       <div>
         <img src={qrCode} alt="qrCode"/>
