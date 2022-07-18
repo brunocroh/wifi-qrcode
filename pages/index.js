@@ -8,33 +8,33 @@ export default function Home() {
   const qrCode = useQRCode(wifiQrcode)
   console.log({ qrCode });
   return (
-    <div className='relative w-full h-screen bg-white flex flex-col'>
+    <div className='relative flex flex-col w-full h-screen text-white bg-black bg-white'>
       <NavBar />
-      <div className='flex w-full h-44 justify-center items-center'>
+      <div className='flex items-center justify-center w-full bg-gray-400 h-44'>
         <div className='text-black'>
           teste
         </div>
       </div>
       <div className='flex flex-row h-full'>
-        <div className='flex h-full flex-grow p-10 justify-center items-center'>
-          <div className='flex flex-col justify-center items-center border-2 bg-white p-16 rounded-lg'>
+        <div className='flex items-center justify-center flex-grow h-full p-10'>
+          <div className='flex flex-col items-center justify-center p-16 bg-white border-2 rounded-lg'>
             <h1 className='text-4xl text-black'> Wifi com QRCode!</h1>
             <h2 className='text-sm text-center text-gray-400'> Acesse sua rede wifi, com o QRCode </h2>
-            <div className='flex mb-5 mt-5'>
-              <div className='p-1 w-14 text-white bg-black'> 
+            <div className='flex mt-5 mb-5'>
+              <div className='p-1 text-white bg-black w-14'> 
                 <span>SSID</span>
               </div>
-              <input className='h-8 w-64 p-1 border border-l-0' placeholder='Wifi do Bruno' type="text" />
+              <input className='w-64 h-8 p-1 border border-l-0' placeholder='Wifi do Bruno' type="text" />
             </div>
             <div className='flex mb-5'>
-              <div className='bg-black p-1 w-14 text-white'> 
+              <div className='p-1 text-white bg-black w-14'> 
                 <span>Senha</span>
               </div>
-              <input className='h-8 w-64 p-1 border border-l-0' placeholder='********' type="password" />
+              <input className='w-64 h-8 p-1 border border-l-0' placeholder='********' type="password" />
             </div>
             <button className='w-[312px] bg-gradient-to-r from-green-400 to-blue-500 p-1 font-bold text-white'> Imprimir </button>
           </div>
-          <div className='flex-grow flex justify-center items-center'>
+          <div className='flex items-center justify-center flex-grow'>
             <img className='rounded-xl' src={qrCode} alt=""/>
           </div>
         </div>
