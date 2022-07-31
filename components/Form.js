@@ -1,10 +1,9 @@
-
 const Form = () => {
-  return(
+  return (
     <div>
       <input />
     </div>
-    )
+  )
 }
 
 export default Form
