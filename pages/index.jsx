@@ -69,11 +69,7 @@ export default function Home() {
               </button>
             </div>
             <div>
-<<<<<<< HEAD
               <Image className="w-64 h-64 rounded-xl" src={qrCode} alt="" />
-=======
-              <img className="w-56" src={qrCode} alt="QR Code" />
->>>>>>> 6245ec96bf04e36c3f39535e615dc503056c6d84
             </div>
           </div>
         </div>
