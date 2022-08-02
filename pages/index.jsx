@@ -1,4 +1,5 @@
 import { useReducer } from 'react'
+import Image from 'next/image'
 import NavBar from '../components/NavBar'
 import useQRCode from '../hooks/useQRCode'
 
@@ -20,9 +21,10 @@ export default function Home() {
   return (
     <div className="relative flex flex-col w-full h-screen text-white bg-white">
       <NavBar />
-      <div className="flex items-center justify-center w-full bg-gray-400 h-80">
-        <div className="text-white">
-          Crie o QRCode para acessar sua rede wifi Fácil e Rápido!
+      <div className="flex items-center justify-center w-full h-80">
+        <div className="text-4xl text-black">
+          Crie o QRCode para acessar sua
+          rede  wifi <span className='font-bold text-primary-900'>fácil</span> e <span className='font-bold text-primary-900'>rápido</span>!
         </div>
       </div>
       <div className="relative flex flex-row h-full bg-black">
@@ -64,7 +66,7 @@ export default function Home() {
               </button>
             </div>
             <div>
-              <img className="rounded-xl" src={qrCode} alt="" />
+              <Image className="w-64 h-64 rounded-xl" src={qrCode} alt="" />
             </div>
           </div>
         </div>
