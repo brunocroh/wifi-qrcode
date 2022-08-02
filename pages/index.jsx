@@ -14,7 +14,7 @@ export default function Home() {
   )
 
   const handleOnChange = (event) => {
-    const { name, value } = event.target
+    const { name, value } = event?.target
     setInputValues({ [name]: value })
   }
 
@@ -69,7 +69,7 @@ export default function Home() {
               </button>
             </div>
             <div>
-              <Image className="w-64 h-64 rounded-xl" src={qrCode} alt="" />
+              <Image className="w-64 h-64 rounded-xl" src={qrCode || ''} alt="" />
             </div>
           </div>
         </div>
