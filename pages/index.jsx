@@ -18,6 +18,8 @@ export default function Home() {
     setInputValues({ [name]: value })
   }
 
+  console.log({ qrCode });
+
   return (
     <div className="relative flex flex-col w-full h-screen text-white bg-white">
       <NavBar />
@@ -69,7 +71,7 @@ export default function Home() {
               </button>
             </div>
             <div>
-              <Image className="w-64 h-64 rounded-xl" src={qrCode || ''} alt="" />
+              <Image className="w-64 h-64 rounded-xl" width="230" height="230" src={qrCode || ''} alt="" />
             </div>
           </div>
         </div>
