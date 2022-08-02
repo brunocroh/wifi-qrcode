@@ -6,6 +6,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Rubik', 'sans-serif'],
+        karla: ['Karla', 'sans-serif']
+      },
       colors: {
         primary: {
           50: '#effdf6',
@@ -19,6 +23,9 @@ module.exports = {
           800: '#6bebb1',
           900: '#5be9a8',
         },
+        offblack: {
+          50: '#212122'
+        }
       },
     },
   },

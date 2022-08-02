@@ -1,7 +1,7 @@
 const NavBar = () => {
   return (
-    <div className="p-5 pl-10">
-      <span className="text-black font-bold">QRCode WI FI</span>
+    <div className="p-2 pl-10 shadow-sm">
+      <img src="/logo2.png" alt="Logo azul escrito Wifi Fácil"/>
     </div>
   )
 }

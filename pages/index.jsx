@@ -20,14 +20,18 @@ export default function Home() {
   return (
     <div className="relative flex flex-col w-full h-screen text-white bg-white">
       <NavBar />
-      <div className="flex items-center justify-center w-full bg-gray-400 h-80">
-        <div className="text-white">
-          Crie o QRCode para acessar sua rede wifi Fácil e Rápido!
-        </div>
+      <div className="flex items-center flex-col justify-center w-full h-96 pt-16 px-4">
+        <h1 className='text-black text-4xl font-normal'>
+          Acesse seu Wifi com QR Code!
+        </h1>
+        <p className='text-black font-karla w-[80%] mt-6 mb-8 text-center'>
+          O Jeito mais fácil, rápido e simples das pessoas conectarem na sua rede Wifi!
+          Você pode baixar a imagem ou imprimir, não precisa mais ficar repetindo sua senha 😊
+        </p>
       </div>
-      <div className="relative flex flex-row h-full bg-black">
-        <div className="flex items-center justify-center flex-grow h-full p-10">
-          <div className="absolute top-[-35px] flex justify-center items-center p-16 bg-white border-2 rounded-lg">
+      <div className="relative flex flex-row h-full">
+        <div className="flex items-center justify-center flex-grow h-full p-10 bg-gray-100">
+          <div className="absolute top-[-35px] flex justify-center items-center p-16 bg-white border-2 rounded-lg shadow-md">
             <div className="px-5 border-r-2">
               <h1 className="text-4xl text-black"> Wifi com QRCode!</h1>
               <h2 className="text-sm text-center text-gray-400">
